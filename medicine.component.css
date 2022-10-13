@@ -1,0 +1,44 @@
+html{
+    background-color: rgba(239, 248, 219, 0.861);
+}
+body{
+    max-width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.my-box{
+    background-color: aqua;
+
+}
+body .medicine{
+    width:70%;
+   
+}
+body .medicine p{
+    margin-left: 5px;
+    padding-left: 5px;
+}
+body .aside{
+    width:30%;
+    float:right;
+    background-color: yellowgreen;
+    
+}
+.scroll-to-top{
+   padding-left: 200px;
+   background-color: linen;
+   
+}
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1;
+}

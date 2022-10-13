@@ -1,0 +1,107 @@
+<html>
+    <div class="container">
+        <header>
+            <div class="bg-success p-2 text-white">
+            <h2>Welcome</h2></div>
+            <div class="bg-success p-2" style="--bs-bg-opacity: .5;">
+            <p><b>Browse the medicines</b></p>
+            <div class="aside">
+                <aside>
+                    <p>Ayurveda is an alternative medicine system with historical roots in the Indian subcontinent. The theory and practice of Ayurveda is pseudoscientific. Ayurveda is heavily practiced in India and Nepal, where around 80% of the population report using it.</p>
+                    <p>Read more by clicking <a href="https://en.wikipedia.org/wiki/Ayurveda">here</a></p>
+                </aside>
+            </div>
+        
+        </div>
+        </header>
+        
+        <body class="group">
+            <p></p>
+            <div class="medicines " >
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+    <div class="container">
+        
+    
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="left-sidebar">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card mt-4">
+                            <a data-toggle="collapse" href="#collapseOne" class="job-list" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="card-header" id="headingOne">
+                                    <h6 class="mb-0 text-dark f-18">Click below to go to profile</h6><br>
+                                    <button type="button" >Profile</button>                                  
+                                </div>                            
+                            </a>                        
+                        </div>  
+                        <div class="my-box">
+                            <p>A lot of text!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-9">
+                <div class="candidates-listing-item">
+                    <div class="list-grid-item mt-4 p-2">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div *ngFor="let med of medicine" style="margin-left:50px">
+                                <div class="candidates-list-desc job-single-meta  pt-2">
+                                    <h5 class="mb-2 f-19"><a href="#" class="text-dark" style="text-align:center">{{med.medicineName}}</a></h5>
+                                    <ul class="list-inline mb-0" style="border:2px solid;border-radius: 5px;border-color: rgba(163, 220, 147, 0.797); padding: 10px; padding-left: 50px;">
+                                        <li class="list-inline-item mr-4" >
+                                            <p class="text-muted f-15 mb-0" ><!--<i class="mdi mdi-account mr-1"></i>-->{{med.category.categoryName}}</p>
+                                        </li>
+                                        
+                                        <li class="list-inline-item mr-4">
+                                            <p class="f-15 mb-0"><a href="" class="text-muted"><!--<i class="mdi mdi-map-marker mr-1"></i>-->{{med.companyName}}</a></p>
+                                        </li>
+    
+                                        <li class="list-inline-item">
+                                            <p class="text-muted f-15 mb-0"><i class="mdi mdi-currency-inr mr-1"></i>{{med.medicineCost}}</p>
+                                        </li>
+                                    </ul>
+                                    <p class="text-muted mt-1 mb-0">These preparations improve digestion and metabolism in the body. </p>
+                                    
+                                    
+                                    <div class="col-md-3" style="margin-left: 150px;">
+                                        <div class="candidates-list-fav-btn text-right">                                        
+                                            <div class="candidates-listing-btn mt-4">
+                                                <a href="#"  class="btn btn-outline-success">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                            </div>
+    
+                            
+                        </div>
+    
+                        
+                        
+                    </div>
+    
+                    
+    
+                    
+                </div>
+                
+                
+            </div>
+        
+        </div>
+    
+    </div>
+            </div>
+                
+        
+        
+        </body>    
+    
+    </div>
+</html>
